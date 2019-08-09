@@ -1,3 +1,4 @@
-# /logger/logs
-# config/debug.toml
-# .idea/
+/logger/logs
+config/debug.toml
+.idea/
+.vscode/
