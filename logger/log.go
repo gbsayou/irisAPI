@@ -41,10 +41,10 @@ func Logger(content interface{}) {
 	if err != nil {
 		fmt.Println("转字符串失败")
 	}
-	wr, err := w.WriteString(string(contentStr) + "\n")
-	if err != nil {
-		fmt.Println("写入文件错误", err)
+	_, err1 := w.WriteString(string(contentStr) + "\n")
+	if err1 != nil {
+		fmt.Println("写入文件错误", err1)
 	}
-	fmt.Println(wr)
+	// fmt.Println(wr)
 	w.Flush()
 }
